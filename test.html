@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>世界一甘いお店</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">トップ</a>
+            <a href="#">新着情報</a>
+            <a href="#">おすすめのスイーツ</a>
+            <a href="#">お問い合わせ</a>
+        </div>
+        <div class="main-content">
+            <form class="contact-form" action="#" method="post">
+                <table>
+                    <tr>
+                        <th><label for="name">お名前</label></th>
+                        <td><input type="text" id="name" name="name" maxlength="40"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="area">お近くのお店</label></th>
+                        <td>
+                            <select id="area" name="area">
+                                <option>北海道・東北</option>
+                                <option>関東</option>
+                                <option>中部</option>
+                                <option>関西</option>
+                                <option>中国・四国</option>
+                                <option>九州・沖縄</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="tel">電話番号</label></th>
+                        <td><input type="text" id="tel" name="tel" maxlength="40"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">メールアドレス</label></th>
+                        <td><input trpe="email" id="email" name="email" maxlength="40"></td>
+                    </tr>
+                    <tr>
+                        <th>お問い合わせ種別</th>
+                        <td class="radio-group">
+                            <label><input type="radio" name="type" value="商品について"> 商品について</label>
+                            <lanel><input type="radio" name="type" value="従業員について"> 従業員について</lanel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="message">お問い合わせ内容</label></th>
+                        <td>
+                            <textarea id="message" name="message" cols="30" rows="5" placeholder="詳細を入力してください"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="submit-row">
+                            <button type="submit">送信</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
